@@ -56,8 +56,14 @@ public class CalculateElements {
     @FindBy(css = "span.qv3Wpe")
     public WebElement comparison2;
 
+    @FindBy(xpath = "//span[@jsname='ubtiRe']")
+    public WebElement comparison3;
+
     @FindBy(xpath = "//div[@jsname='abcgof']")
     public WebElement click_six;
+
+    @FindBy(xpath = "//div[@jsname='aN1RFf']")
+    public WebElement click_sin;
 
     public CalculateElements(WebDriver driver) {
         initElements(driver, this);

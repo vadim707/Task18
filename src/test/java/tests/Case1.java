@@ -45,6 +45,6 @@ public class Case1 {
 
     @AfterAll
     public static void teardown(){
-        //driver.quit();
+        driver.quit();
     }
 }

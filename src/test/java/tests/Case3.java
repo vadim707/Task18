@@ -11,7 +11,7 @@ import pages.CalculateElements;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class Case2 {
+public class Case3 {
 
     private static WebDriver driver;
     private static CalculateElements calculateElements;
@@ -24,14 +24,12 @@ public class Case2 {
     }
 
     @Test
-    public void case2() {
+    public void case3() {
         calculateElements.findCalculator.sendKeys("Калькулятор", Keys.ENTER);
-        calculateElements.click_six.click();
-        calculateElements.click_split.click();
-        calculateElements.click_zero.click();
+        calculateElements.click_sin.click();
         calculateElements.click_equally.click();
-        assertEquals("6 ÷ 0 =", calculateElements.comparison1.getText());
-        assertEquals("Infinity", calculateElements.comparison2.getText());
+        assertEquals("sin() =", calculateElements.comparison3.getText());
+        assertEquals("Error", calculateElements.comparison2.getText());
     }
 
     @AfterAll
